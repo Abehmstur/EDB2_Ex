@@ -1,0 +1,13 @@
+Ctrl + N Criar um novo arquivo
+Ctrl + Shift + R Abrir o código de um arquivo (recurso)
+Ctrl + Shift + T Abrir o código de um tipo
+Ctrl + : Pular para o próximo erro
+Ctrl + Shift + G Procura por referências
+Ctrl + Shift + P Selecione o par correspondente
+Alt + setas Ir para frente / trás
+Ctrl + Espaço Autocomplete
+Ctrl + 3 Acesso rápido
+Ctrl + Shift + F Formatar codigo-fonte
+Ctrl + Shift + O Organiza as importações
+Alt + Shift + R Renomear refatorando
+Ctrl + D Excluir linha
