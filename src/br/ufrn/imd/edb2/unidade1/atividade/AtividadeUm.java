@@ -27,20 +27,35 @@ public class AtividadeUm {
 
         return buscaSequencial(vet, x, i + 1);
 	}
-
 	
-	public static void main(String[] args) {
-        int[] v = { 3, 7, 1, 9, 5 };
-        int x = 1;
-
-        int resultadoI = buscaSequencial(v, x, 0);
-
-        if (resultadoI != -1) {
-            System.out.println("O elemento " + x + " foi encontrado no indice " + resultadoI);
+	public static void analisarResultadoBuscaSequencial(int resultado, int x) {
+		if (resultado != -1) {
+            System.out.println("O elemento " + x + " foi encontrado no indice " + resultado);
         } else {
             System.out.println("O elemento " + x + " nao foi encontrado no vetor.");
         }
+	}
+
+	
+	public static void main(String[] args) {
+		int[] v = { 3, 7, 1, 9, 5 };
+        int x = 1;
+
+        int resultadoI = buscaSequencial(v, x, 0);
+        //Teste 1
+        analisarResultadoBuscaSequencial(resultadoI, x);
 		
+        //Teste 2
+        int[] v2 = { 0, 8, 1, 9, 15, 40, 70, 90 };
+        x = 15;
+        resultadoI = buscaSequencial(v2, x, 0);
+        analisarResultadoBuscaSequencial(resultadoI, x);
+        
+        //Teste 3
+        x = 1;
+        int[] v3 = {};
+        resultadoI = buscaSequencial(v3, x, 0);
+        analisarResultadoBuscaSequencial(resultadoI, x);
 	}
 
 }
